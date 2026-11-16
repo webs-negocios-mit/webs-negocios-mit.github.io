@@ -1,0 +1,30 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 857,
+    "origen": "https://ruralcastell.com/wp-content/uploads/galeria2.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 1280,
+    "origen": "https://ruralcastell.com/wp-content/uploads/160cd7c3-d9f4-40fc-bcb3-d3a3539139c5.png",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 854,
+    "origen": "https://ruralcastell.com/wp-content/uploads/puja-restaurante-paella-a-lena.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 853,
+    "origen": "https://ruralcastell.com/wp-content/uploads/puja-restaurante-paella-a-lena-1024x683.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

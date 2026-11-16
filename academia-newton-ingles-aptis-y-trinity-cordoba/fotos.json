@@ -1,0 +1,23 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 78,
+    "origen": "https://www.academianewtoncordoba.es/attachments/Image/composicion_moves_iii_junta.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 393,
+    "origen": "https://www.academianewtoncordoba.es/attachments/Image/Banner-Web-2026-LR.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 960,
+    "origen": "https://www.academianewtoncordoba.es/attachments/Image/Publicidad-Google-18.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]
