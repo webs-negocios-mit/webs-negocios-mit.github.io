@@ -1,0 +1,44 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 342,
+    "origen": "https://www.britishvigo.com/wp-content/uploads/2022/07/british-heritage-english-academy-vigo.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 343,
+    "origen": "https://www.britishvigo.com/wp-content/uploads/2022/07/british-heritage-english-academy-vigo-1280x343.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 342,
+    "origen": "https://www.britishvigo.com/wp-content/uploads/2022/07/british-heritage-english-academy-vigo-980x262.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 720,
+    "origen": "https://www.britishvigo.com/wp-content/uploads/2023/03/Fachada-scaled.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto5.jpg",
+    "width": 1280,
+    "height": 720,
+    "origen": "https://www.britishvigo.com/wp-content/uploads/2023/03/Fachada-1280x720.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto6.jpg",
+    "width": 1280,
+    "height": 719,
+    "origen": "https://www.britishvigo.com/wp-content/uploads/2023/03/Fachada-980x551.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

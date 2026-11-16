@@ -1,0 +1,44 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 1173,
+    "origen": "https://keygranada.es/wp-content/uploads/2024/08/PROGRAMACION-LLAVES-1-1024x939.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 1173,
+    "origen": "https://i0.wp.com/keygranada.es/wp-content/uploads/2024/08/PROGRAMACION-LLAVES-1.jpg?fit=1024%2C939&ssl=1",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 1173,
+    "origen": "https://i0.wp.com/keygranada.es/wp-content/uploads/2024/08/PROGRAMACION-LLAVES-1.jpg?w=1200&ssl=1",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 1173,
+    "origen": "https://i0.wp.com/keygranada.es/wp-content/uploads/2024/08/PROGRAMACION-LLAVES-1.jpg?resize=1024%2C939&ssl=1",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto5.jpg",
+    "width": 1280,
+    "height": 1173,
+    "origen": "https://i0.wp.com/keygranada.es/wp-content/uploads/2024/08/copia-llaves-tres.jpg?fit=1024%2C939&ssl=1",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto6.jpg",
+    "width": 1280,
+    "height": 1173,
+    "origen": "https://i0.wp.com/keygranada.es/wp-content/uploads/2024/08/copia-llaves-tres.jpg?w=1200&ssl=1",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

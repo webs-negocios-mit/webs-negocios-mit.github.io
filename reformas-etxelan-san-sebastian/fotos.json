@@ -1,0 +1,16 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 956,
+    "height": 1280,
+    "origen": "https://reformasetxelan.com/wp-content/uploads/IMG_8971.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 956,
+    "height": 1280,
+    "origen": "https://reformasetxelan.com/wp-content/uploads/IMG_9383.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

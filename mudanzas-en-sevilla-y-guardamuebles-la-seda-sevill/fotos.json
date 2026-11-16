@@ -1,0 +1,16 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 850,
+    "origen": "https://www.mudanzasevilla-laseda.es/wp-content/uploads/2026/06/Empresa-de-mudanzas-en-Sevilla.webp",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 850,
+    "origen": "https://www.mudanzasevilla-laseda.es/wp-content/uploads/2026/06/Empresa-de-mudanzas-en-Sevilla-1024x680.webp",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

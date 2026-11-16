@@ -1,0 +1,30 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 656,
+    "origen": "http://www.cvlaspalmeras.com/wp-content/uploads/2014/04/ATT00001.gif",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 463,
+    "origen": "http://www.cvlaspalmeras.com/wp-content/uploads/2013/07/slider3.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 463,
+    "origen": "http://www.cvlaspalmeras.com/wp-content/uploads/2013/07/slider2.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 463,
+    "origen": "http://www.cvlaspalmeras.com/wp-content/uploads/2013/07/slider1.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

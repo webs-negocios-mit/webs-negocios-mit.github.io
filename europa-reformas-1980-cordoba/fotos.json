@@ -1,0 +1,44 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 437,
+    "origen": "https://www.reformaseuropa.com/wp-content/uploads/2018/07/slider.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 437,
+    "origen": "https://www.reformaseuropa.com/wp-content/uploads/2018/07/slider02-1.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 437,
+    "origen": "https://www.reformaseuropa.com/wp-content/uploads/2018/07/slider03.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 855,
+    "origen": "https://www.reformaseuropa.com/wp-content/uploads/2018/06/categoria-interiorismo-1024x684.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto5.jpg",
+    "width": 1280,
+    "height": 854,
+    "origen": "https://www.reformaseuropa.com/wp-content/uploads/2018/06/categoria-interiorismo.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto6.jpg",
+    "width": 1280,
+    "height": 855,
+    "origen": "https://www.reformaseuropa.com/wp-content/uploads/2018/06/reforma-vivienda-1024x684.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

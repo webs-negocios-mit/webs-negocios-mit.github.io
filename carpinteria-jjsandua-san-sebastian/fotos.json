@@ -1,0 +1,44 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 1280,
+    "origen": "https://www.jjsanduacarpinteros.com/wp-content/uploads/2022/06/Inicio-Escalera.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 1280,
+    "origen": "https://www.jjsanduacarpinteros.com/wp-content/uploads/2022/06/Inicio-Escalera-980x980.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 1280,
+    "origen": "https://www.jjsanduacarpinteros.com/wp-content/uploads/2021/04/Furgoneta.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 1280,
+    "origen": "https://www.jjsanduacarpinteros.com/wp-content/uploads/2021/04/Furgoneta-980x980.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto5.jpg",
+    "width": 1280,
+    "height": 1280,
+    "origen": "https://www.jjsanduacarpinteros.com/wp-content/uploads/2022/06/Armario.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto6.jpg",
+    "width": 1280,
+    "height": 1280,
+    "origen": "https://www.jjsanduacarpinteros.com/wp-content/uploads/2022/06/Armario-980x980.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

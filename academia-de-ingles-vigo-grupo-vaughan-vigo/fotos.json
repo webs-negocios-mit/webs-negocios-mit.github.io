@@ -1,0 +1,23 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 631,
+    "origen": "https://aprendeingles.grupovaughan.com/hubfs/preparacion-oxford.png",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 1280,
+    "origen": "https://aprendeingles.grupovaughan.com/hubfs/vigo.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 466,
+    "origen": "https://aprendeingles.grupovaughan.com/hubfs/gente%20hablando.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]
