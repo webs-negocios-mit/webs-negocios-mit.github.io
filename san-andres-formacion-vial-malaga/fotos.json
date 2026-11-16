@@ -1,0 +1,23 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 960,
+    "origen": "https://www.autoescuelaenmalaga.com/wp-content/uploads/2020/10/autoescuelas-malaga.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 960,
+    "origen": "https://www.autoescuelaenmalaga.com/wp-content/uploads/2020/10/autoescuelas-en-malaga.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 1280,
+    "origen": "https://www.autoescuelaenmalaga.com/wp-content/uploads/2020/10/autoescuela-barata-malaga.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 426,
+    "origen": "http://www.opticarico.com/public/static/images/slideshow/banner/twitter_GRADUADO.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 426,
+    "origen": "http://www.opticarico.com/public/static/images/slideshow/banner/twitter_SOL.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 426,
+    "origen": "http://www.opticarico.com/public/static/images/slideshow/banner/twitter_CONTACTOLOGIA.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 480,
+    "origen": "http://www.opticarico.com/public/static/images/slideshow/banner/OPTICA-RICO-PROGRESIVOS2-8X3.gif",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto5.jpg",
+    "width": 1280,
+    "height": 670,
+    "origen": "http://www.opticarico.com/public/static/images/slideshow/buenafuente2.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]
