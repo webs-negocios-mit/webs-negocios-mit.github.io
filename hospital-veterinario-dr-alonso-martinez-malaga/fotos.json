@@ -1,0 +1,44 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 465,
+    "origen": "http://www.clinicaveterinariamalaga.net/images/slider322.jpg?crc=4212119019",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 465,
+    "origen": "http://www.clinicaveterinariamalaga.net/images/slider133.jpg?crc=3819142426",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 465,
+    "origen": "http://www.clinicaveterinariamalaga.net/images/slider1322.jpg?crc=4225928573",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 464,
+    "origen": "http://www.clinicaveterinariamalaga.net/images/slider12.jpg?crc=3975098820",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto5.jpg",
+    "width": 1280,
+    "height": 719,
+    "origen": "http://www.clinicaveterinariamalaga.net/images/2015-12-19%20191420.jpg?crc=392268406",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto6.jpg",
+    "width": 1280,
+    "height": 719,
+    "origen": "http://www.clinicaveterinariamalaga.net/images/2015-12-19%20191420_2x.jpg?crc=4289686093",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]
