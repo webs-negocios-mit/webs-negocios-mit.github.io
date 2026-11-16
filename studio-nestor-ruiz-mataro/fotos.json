@@ -1,0 +1,44 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 672,
+    "origen": "https://studionestorruiz.com/og.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 960,
+    "origen": "https://studionestorruiz.com/fam-tazas.webp",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 959,
+    "origen": "https://studionestorruiz.com/fam-textil.webp",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 959,
+    "origen": "https://studionestorruiz.com/fam-cojines.webp",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto5.jpg",
+    "width": 1280,
+    "height": 959,
+    "origen": "https://studionestorruiz.com/fam-gran-formato.webp",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto6.jpg",
+    "width": 1280,
+    "height": 853,
+    "origen": "https://studionestorruiz.com/tazas-diseno.webp",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

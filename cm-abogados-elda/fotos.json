@@ -1,0 +1,16 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 409,
+    "origen": "http://www.abogados-cm.es/img/slider/carolina1.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 409,
+    "origen": "http://www.abogados-cm.es/img/slider/slider2.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

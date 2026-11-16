@@ -1,0 +1,23 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 568,
+    "origen": "https://fumigacionesmalaga.es/images/ocean_green_mantenimiento_jardines.jpg?crc=4158080172",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 450,
+    "origen": "https://fumigacionesmalaga.es/images/ibizakostacom_jardines-960x338.jpg?crc=4066103934",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 511,
+    "origen": "https://fumigacionesmalaga.es/images/walkmowing.jpg?crc=453513236",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]

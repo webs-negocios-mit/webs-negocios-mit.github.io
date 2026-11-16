@@ -1,0 +1,44 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 682,
+    "origen": "http://proyectosposada.com/wp-content/uploads/2015/12/imagen_fondo_div-1024x546.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 682,
+    "origen": "http://proyectosposada.com/wp-content/uploads/2019/08/3_slider_calefaccion-1024x546-1-1024x546.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 682,
+    "origen": "http://proyectosposada.com/wp-content/uploads/2019/08/2_slider_fontaneria-1024x546-1-1024x546.jpg",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 1280,
+    "height": 407,
+    "origen": "http://proyectosposada.com/wp-content/uploads/2026/02/SH-COLOR-1024x326.png",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto5.jpg",
+    "width": 1280,
+    "height": 407,
+    "origen": "http://proyectosposada.com/wp-content/uploads/2026/02/SH-COLOR-1536x489.png",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  },
+  {
+    "archivo": "foto6.jpg",
+    "width": 1280,
+    "height": 408,
+    "origen": "http://proyectosposada.com/wp-content/uploads/2026/02/SH-COLOR-800x255.png",
+    "verificacion": "URL original sin banco conocido; ancho comprobado"
+  }
+]
