@@ -1,0 +1,37 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 960,
+    "height": 1280,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 1280,
+    "height": 720,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 707,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 960,
+    "height": 1280,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  },
+  {
+    "archivo": "foto5.jpg",
+    "width": 960,
+    "height": 1280,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  }
+]
