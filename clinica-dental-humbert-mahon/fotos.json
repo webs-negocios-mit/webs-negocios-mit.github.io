@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 853,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  }
+]
