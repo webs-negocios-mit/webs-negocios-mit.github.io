@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="robots" content="noindex,nofollow">
+<title>Producto · MOCILAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://mocilab.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css?v=10">
+</head>
+<body data-page="producto">
+<main id="main" class="px"></main>
+<script src="data.js?v=10"></script>
+<script src="comun.js?v=10"></script>
+<script>
+const p=byH[new URLSearchParams(location.search).get('h')];
+if(!p){
+  document.title='Producto no encontrado · MOCILAB';
+  $('#main').innerHTML=`<div class="nf"><h1>No encontrado</h1><p class="soft">Este producto ya no está disponible o el enlace no es correcto.</p><a class="btn k" style="margin-top:24px" href="index.html#tienda">Ir a la tienda</a></div>`;
+}else{
+  document.title=`${p.t} · MOCILAB`;
+  const g=[p.img,...p.gal], club=clubName[p.c]||'Mocilab', t=esc(p.t);
+  const rel=PRODUCTS.filter(x=>x.c===p.c&&x.h!==p.h&&x.ok).slice(0,4);
+  const buy=`${p.ok?'Añadir al carrito':'Agotado'}`;
+  let q=1;
+  $('#main').innerHTML=`
+  <nav class="crumbs" aria-label="Migas"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><a href="index.html?club=${p.c}#tienda">${club}</a><span aria-hidden="true">/</span><span aria-current="page">${t}</span></nav>
+  <div class="pd">
+    <div class="gal"><div class="main"><img id="pImg" src="${g[0]}" alt="${t}" width="900" height="1125" fetchpriority="high"></div>
+      ${g.length>1?`<div class="th">${g.map((u,i)=>`<button data-g="${i}" aria-pressed="${!i}" aria-label="Ver foto ${i+1}"><img src="${u.replace('width=1000','width=200')}" alt="" width="72" height="72" loading="lazy"></button>`).join('')}</div>`:''}</div>
+    <div class="info">
+      <span class="lbl soft">${club}</span>
+      <h1>${t}</h1>
+      <span class="pr num">${eur(p.p)}</span>
+      <div class="row"><div class="stepper"><button data-q="-1" aria-label="Quitar una unidad">−</button><output id="pQ" class="num">1</output><button data-q="1" aria-label="Añadir una unidad">+</button></div>
+        <button class="btn k" id="pAdd" ${p.ok?'':'disabled'}>${buy}</button>
+        <button class="fav glass-l" data-fav="${p.h}" aria-pressed="${favs.has(p.h)}" aria-label="Guardar en favoritos">${heart}</button></div>
+      <p class="desc">${esc(p.desc||'Producto oficial con licencia, diseñado en España.')}</p>
+      <ul><li>Licencia oficial, producto 100&nbsp;% auténtico</li><li>Envío en 24-72 h · gratis desde 40&nbsp;€ en la Península</li><li>Devolución en 14 días</li><li>Pago seguro: tarjeta, PayPal, Apple Pay y Google Pay</li></ul>
+    </div>
+  </div>
+  ${rel.length?`<section class="rel" aria-labelledby="relT"><h2 id="relT">También te <span class="out">puede gustar</span></h2><div class="grid">${rel.map(card).join('')}</div></section>`:''}
+  <div class="sticky-add glass-l"><span class="pr num">${eur(p.p)}</span><button class="fav glass-l" style="position:static" data-fav="${p.h}" aria-pressed="${favs.has(p.h)}" aria-label="Guardar en favoritos">${heart}</button><button class="btn k" id="sAdd" ${p.ok?'':'disabled'}>${buy}</button></div>`;
+  document.body.classList.add('has-sticky');
+  window.pageClick=(e,t)=>{
+    if(t.dataset.g){$('#pImg').src=g[t.dataset.g];$$('.pd .th button').forEach(b=>b.setAttribute('aria-pressed',b===t))}
+    else if(t.dataset.q){q=Math.max(1,q+ +t.dataset.q);$('#pQ').textContent=q}
+    else if(t.id==='pAdd')add(p.v,q);
+    else if(t.id==='sAdd')add(p.v,1);
+  };
+}
+</script>
+</body>
+</html>
