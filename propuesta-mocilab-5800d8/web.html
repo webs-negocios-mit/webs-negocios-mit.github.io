@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="robots" content="noindex,nofollow">
+<title>MOCILAB · Coleccionables oficiales de fútbol</title>
+<meta name="description" content="Monedas coleccionables, cuadernos y blocs 3D con licencia oficial del Real Madrid, FC Barcelona, Atlético, Valencia, Benfica, Sporting y Porto. Diseñados en España.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://mocilab.com"><link rel="preconnect" href="https://cdn.shopify.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"IT Outline";src:url(fonts/intertight-800-outline.woff2) format("woff2");font-weight:800;font-display:swap}
+.out{font-family:"IT Outline","Inter Tight",sans-serif;font-weight:800;color:transparent;-webkit-text-stroke:2px var(--sc,#0b0b0c)}
+/* Escala: espaciado 4/8/12/16/24/32/48/64/96 · tipo 12/13/15/18/24/36/56/96 · 1 familia, 2 colores + 1 acento */
+:root{--k:#0b0b0c;--w:#fff;--bg:#f4f3f0;--mut:#6f6f72;--line:#e5e3de;--acc:#d9b45a;
+  --gl:rgba(255,255,255,.16);--gl-b:1px solid rgba(255,255,255,.3);--gl-f:blur(24px) saturate(1.5);
+  --gll:rgba(252,252,250,.68);--gll-b:1px solid rgba(255,255,255,.85);
+  --sh:0 20px 50px rgba(0,0,0,.16),inset 0 1px 1px rgba(255,255,255,.55);
+  --ease:cubic-bezier(.2,.8,.2,1);--r:14px;--hdr:80px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media(pointer:fine){html{overscroll-behavior:none}}
+body{font:15px/1.55 "Inter Tight",Helvetica,Arial,sans-serif;color:var(--k);background:var(--w);-webkit-font-smoothing:antialiased;touch-action:manipulation;-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,select{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:6px}
+h1,h2,h3{text-wrap:balance;letter-spacing:-.035em;line-height:.95}
+[id]{scroll-margin-top:calc(var(--hdr) + 64px)}
+.px{padding-left:24px;padding-right:24px}
+.lbl{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.soft{color:var(--mut)}
+.num{font-variant-numeric:tabular-nums}
+.skip{position:fixed;left:12px;top:-60px;z-index:100;background:var(--k);color:#fff;padding:10px 16px;border-radius:10px;transition:top .2s}
+.skip:focus{top:12px}
+.glass,.glass-l{isolation:isolate;border:0}
+.glass{background:linear-gradient(135deg,rgba(255,255,255,.24),rgba(255,255,255,.06) 60%,rgba(255,255,255,.12));backdrop-filter:blur(16px) saturate(1.9) brightness(1.06);-webkit-backdrop-filter:blur(16px) saturate(1.9) brightness(1.06);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 1px rgba(255,255,255,.15),inset 0 0 20px rgba(255,255,255,.07),0 12px 32px rgba(0,0,0,.2)}
+.glass-l{background:linear-gradient(135deg,rgba(255,255,255,.82),rgba(255,255,255,.5) 60%,rgba(255,255,255,.7));backdrop-filter:blur(18px) saturate(1.8);-webkit-backdrop-filter:blur(18px) saturate(1.8);
+  box-shadow:inset 0 1px 0 #fff,inset 0 -1px 1px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.1)}
+/* borde con brillo y reflejo superior (efecto liquid glass) */
+.glass:before,.glass-l:before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;padding:1px;pointer-events:none;
+  background:linear-gradient(140deg,rgba(255,255,255,.95),rgba(255,255,255,.15) 30%,rgba(255,255,255,0) 55%,rgba(255,255,255,.55));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.glass:after,.glass-l:after{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;background:radial-gradient(130% 70% at 15% -10%,rgba(255,255,255,.35),rgba(255,255,255,0) 55%)}
+.glass-l:before{background:linear-gradient(140deg,#fff,rgba(255,255,255,.4) 35%,rgba(0,0,0,.06) 60%,rgba(255,255,255,.9))}
+.btn,.acts button,.club,.pill{position:relative}
+
+/* cinta */
+.tape{background:var(--k);color:#fff;height:32px;overflow:hidden;display:flex;align-items:center;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.tape div{display:flex;white-space:nowrap;animation:tape 40s linear infinite}
+.tape span{padding-right:48px}
+.tape b{color:var(--acc)}
+@keyframes tape{to{transform:translateX(-50%)}}
+
+/* cabecera */
+header{position:fixed;left:12px;right:12px;top:44px;z-index:50;height:56px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 8px 0 16px;border-radius:16px;color:#fff;box-shadow:var(--sh);
+  transition:top .35s var(--ease),background-color .35s,color .35s,border-color .35s}
+header.solid{top:12px;color:var(--k);background:linear-gradient(135deg,rgba(255,255,255,.8),rgba(255,255,255,.55));box-shadow:inset 0 1px 0 #fff,0 10px 30px rgba(0,0,0,.08)}
+header.solid:before{background:linear-gradient(140deg,#fff,rgba(255,255,255,.4) 35%,rgba(0,0,0,.07) 60%,rgba(255,255,255,.9))}
+/* franja de cristal que tapa el hueco al hacer scroll */
+.hdr-bg{position:fixed;left:0;right:0;top:0;height:var(--hdr);z-index:49;pointer-events:none;opacity:0;transition:opacity .3s;background:rgba(255,255,255,.55);backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6)}
+body.scrolled .hdr-bg{opacity:1}
+header nav{display:flex;gap:4px;font-size:14px;font-weight:500}
+header nav a{padding:8px 10px;border-radius:10px;transition:background-color .2s}
+header nav a:hover{background:rgba(255,255,255,.18)}
+header.solid nav a:hover{background:rgba(0,0,0,.05)}
+.xmas{color:var(--acc);font-weight:700}
+header.solid .xmas{color:#9b7616}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.04em}
+.tools{display:flex;justify-content:flex-end;gap:4px;align-items:center}
+.ib{position:relative;height:40px;min-width:40px;padding:0 10px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:600;transition:background-color .2s}
+.ib:hover{background:rgba(255,255,255,.18)}
+header.solid .ib:hover{background:rgba(0,0,0,.05)}
+.badge{min-width:20px;height:20px;padding:0 6px;border-radius:99px;display:grid;place-items:center;font-size:11px;font-weight:700;background:var(--acc);color:var(--k)}
+.badge:empty{display:none}
+.srch{width:0;opacity:0;transition:width .3s var(--ease),opacity .3s;border:0;background:transparent;color:inherit;font:inherit;font-size:14px;outline:0;padding:4px 0}
+.srch.on{width:200px;opacity:1;border-bottom:1px solid currentColor}
+.srch::placeholder{color:inherit;opacity:.6}
+@media(max-width:900px){header nav{display:none}header{grid-template-columns:auto 1fr}.srch.on{width:120px}}
+
+/* hero: pase de fotos */
+.hero{position:relative;height:100svh;min-height:640px;margin-top:-32px;overflow:hidden;background:#111;color:#fff}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);transform-origin:var(--o,50% 50%)}
+.slide.on img{animation:kb 7s linear forwards}
+@keyframes kb{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.45) 0,rgba(0,0,0,.05) 28%,rgba(0,0,0,.2) 50%,rgba(0,0,0,.7) 100%)}
+.hero .copy{position:absolute;z-index:2;left:24px;right:24px;bottom:100px;text-align:center;--sc:#fff}
+.hero .k{display:inline-block;padding:8px 16px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:clamp(56px,12.5vw,196px);font-weight:800;text-transform:uppercase;letter-spacing:-.045em;line-height:.84;text-shadow:0 10px 40px rgba(0,0,0,.25)}
+.hero h1 .out{-webkit-text-stroke-width:clamp(1.5px,.2vw,3px);text-shadow:none}
+.hero .ctas{justify-content:center;margin-top:32px}
+.ctas{display:flex;gap:8px;flex-wrap:wrap}
+.btn{height:52px;padding:0 24px;display:inline-flex;align-items:center;gap:10px;border-radius:12px;font-weight:600;font-size:15px;transition:transform .2s var(--ease),background-color .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn.w{background:#fff;color:var(--k)}
+.btn.g{color:#fff}
+.btn.k{background:var(--k);color:#fff}
+.btn.k:hover{background:#2a2a2c}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.chip{position:absolute;z-index:2;right:24px;top:128px;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:99px;font-size:13px;font-weight:600;color:#fff;max-width:min(420px,calc(100% - 48px))}
+.chip img{width:32px;height:32px;border-radius:99px;object-fit:cover;background:#fff;flex:none}
+.chip span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prog{position:absolute;z-index:2;left:24px;right:84px;bottom:40px;display:flex;gap:6px}
+.prog button{flex:1;height:22px;display:flex;align-items:center}
+.prog i{display:block;width:100%;height:3px;border-radius:9px;background:rgba(255,255,255,.3);overflow:hidden}
+.prog i:after{content:"";display:block;height:100%;width:100%;background:#fff;transform:scaleX(0);transform-origin:left}
+.prog .done i:after{transform:scaleX(1)}
+.prog .on i:after{animation:fill 7s linear forwards}
+.paused .prog .on i:after,.paused .slide.on img{animation-play-state:paused}
+@keyframes fill{to{transform:scaleX(1)}}
+.pp{position:absolute;z-index:2;right:24px;bottom:28px;width:44px;height:44px;border-radius:99px;display:grid;place-items:center;color:#fff}
+@media(max-width:700px){.hero .copy{bottom:88px}.hero h1{font-size:17vw}.hero .ctas{flex-wrap:nowrap}.hero .btn{padding:0 18px}}
+@media(prefers-reduced-motion:reduce){.tape div,.slide.on img,.prog .on i:after,.track{animation:none}.slide{transition:none}}
+
+/* clubes */
+.clubs{position:sticky;top:var(--hdr);z-index:48;display:flex;gap:8px;overflow-x:auto;padding:12px 24px;scrollbar-width:none;border-bottom:1px solid var(--line);background:rgba(255,255,255,.75);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4)}
+.club{flex:none;display:flex;align-items:center;gap:8px;height:44px;padding:0 16px 0 6px;border-radius:99px;border:1px solid var(--line);background:#fff;font-weight:600;font-size:14px;transition:border-color .2s,background-color .2s,color .2s}
+.club img{width:32px;height:32px;object-fit:contain}
+.club .ph0{width:32px;height:32px;display:grid;place-items:center;border-radius:99px;background:var(--bg);font-size:12px}
+.club:hover{border-color:var(--k)}
+.club[aria-pressed=true]{background:var(--k);border-color:var(--k);color:#fff}
+
+/* tienda */
+.shop{padding-top:64px}
+.hd{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:24px}
+.hd h2{font-size:clamp(44px,6.5vw,96px);font-weight:800}
+.hd h2 span:not(.out){color:#a3a29e}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px;border-top:1px solid var(--k);margin:0 24px;padding-left:0;padding-right:0}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pill{height:40px;padding:0 16px;border-radius:99px;border:1px solid var(--line);font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;transition:border-color .2s,background-color .2s,color .2s}
+.pill:hover{border-color:var(--k)}
+.pill small{font-size:12px;color:var(--mut)}
+.pill[aria-pressed=true]{background:var(--k);color:#fff;border-color:var(--k)}
+.pill[aria-pressed=true] small{color:#b5b5b5}
+.sort{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--mut)}
+.sort select{height:40px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--k);font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px 16px;padding-top:8px}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr);gap:24px 10px}}
+.card{display:flex;flex-direction:column;min-width:0}
+.ph{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--bg)}
+.ph>a{position:absolute;inset:0}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .45s,transform .9s var(--ease)}
+.ph img.p{mix-blend-mode:multiply}
+.ph img.l{opacity:0}
+.card:hover .ph img.p{transform:scale(1.04)}
+.card:hover .ph img.l{opacity:1}
+.tag{position:absolute;top:12px;left:12px;z-index:2;font-size:11px;font-weight:700;letter-spacing:.1em;padding:5px 9px;border-radius:8px;pointer-events:none}
+.tag.n{background:var(--k);color:#fff}
+.fav{position:absolute;top:8px;right:8px;z-index:3;width:40px;height:40px;border-radius:99px;display:grid;place-items:center;transition:transform .2s}
+.fav:hover{transform:scale(1.08)}
+.fav svg{width:18px;height:18px}
+.fav[aria-pressed=true] svg{fill:#e0384b;stroke:#e0384b}
+.acts{position:absolute;left:10px;right:10px;bottom:10px;z-index:3;display:flex;gap:6px;transform:translateY(calc(100% + 14px));transition:transform .35s var(--ease)}
+.card:hover .acts,.card:focus-within .acts{transform:none}
+@media(hover:none){.acts{transform:none}}
+.acts button{height:44px;border-radius:12px;font-size:12px;font-weight:700;letter-spacing:.08em;box-shadow:0 -6px 24px rgba(0,0,0,.08)}
+.acts .add{flex:1}
+.acts .qvb{width:44px;display:grid;place-items:center}
+.acts button:disabled{opacity:.65;cursor:not-allowed}
+.meta{padding:12px 4px 0;display:grid;gap:2px;min-width:0}
+.meta .club-n{font-size:12px;color:var(--mut);font-weight:500}
+.meta h3{font-size:15px;font-weight:500;letter-spacing:-.01em;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.meta .pr{font-weight:700;font-size:15px;margin-top:4px}
+.empty{grid-column:1/-1;text-align:center;padding:64px 16px;color:var(--mut)}
+.empty .btn{margin-top:16px}
+.more{display:flex;justify-content:center;padding:48px 0 0}
+
+/* editorial */
+.edit{position:relative;margin:96px 24px 0;height:min(84vh,760px);min-height:520px;border-radius:24px;overflow:hidden;color:#fff}
+.edit>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.edit .gc{position:absolute;left:24px;bottom:24px;max-width:460px;padding:32px;border-radius:20px;background:rgba(18,18,20,.42);border:var(--gl-b);backdrop-filter:blur(28px) saturate(1.5);-webkit-backdrop-filter:blur(28px) saturate(1.5);box-shadow:var(--sh)}
+.edit h2{font-size:clamp(36px,4.4vw,64px);font-weight:800;margin:12px 0 16px}
+.edit{--sc:#fff}
+.edit p{color:rgba(255,255,255,.84);margin-bottom:24px}
+@media(max-width:700px){.edit{margin:64px 12px 0}.edit .gc{left:12px;right:12px;bottom:12px;padding:24px}}
+
+/* categorías */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-top:24px}
+.cat{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--bg)}
+.cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.cat:hover img{transform:scale(1.05)}
+.cat .lb{position:absolute;left:10px;right:10px;bottom:10px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+.cat .lb b{font-size:18px;font-weight:700;letter-spacing:-.02em}
+.cat .lb span{font-size:13px;color:var(--mut)}
+@media(max-width:900px){.cats{grid-template-columns:1fr 1fr}}
+
+/* reseñas */
+.revs{margin-top:96px;padding:48px 0;background:var(--bg);overflow:hidden}
+.revs .hd{padding-bottom:32px}
+.revs .hd h2{font-size:clamp(36px,4.4vw,64px)}
+.track{display:flex;gap:16px;width:max-content;animation:tape 70s linear infinite;padding-left:24px}
+.revs:hover .track{animation-play-state:paused}
+.rv{width:340px;flex:none;background:#fff;border-radius:var(--r);padding:24px;display:grid;gap:12px;align-content:start}
+.rv p{font-size:17px;font-weight:500;line-height:1.4}
+.rv small{color:var(--mut);font-weight:500}
+.st{color:#c4991f;letter-spacing:2px}
+
+/* licencias y garantías */
+.lic{display:grid;grid-template-columns:repeat(8,1fr);align-items:center;gap:32px;padding:64px 24px}
+.lic img{height:56px;width:100%;object-fit:contain;filter:grayscale(1);opacity:.5;transition:filter .3s,opacity .3s}
+.lic img:hover{filter:none;opacity:1}
+.perks{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.perks div{padding:32px 24px;border-right:1px solid var(--line)}
+.perks div:last-child{border:0}
+.perks b{display:block;margin-bottom:4px}
+.perks span{color:var(--mut);font-size:14px}
+@media(max-width:900px){.lic{grid-template-columns:repeat(4,1fr)}.perks{grid-template-columns:1fr 1fr}.perks div:nth-child(2){border-right:0}}
+
+footer{background:var(--k);color:#a3a3a3;padding:64px 24px calc(24px + env(safe-area-inset-bottom))}
+footer .cs{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;font-size:14px}
+footer h4{color:#fff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+footer a{display:block;padding:4px 0}footer a:hover{color:#fff}
+footer .fl{font-size:clamp(64px,13vw,200px);font-weight:800;letter-spacing:-.05em;line-height:.85;color:#fff;margin-top:64px}
+.nl{display:flex;max-width:400px;margin-top:16px;border-radius:12px;overflow:hidden;border:1px solid #2c2c2e}
+.nl input{flex:1;min-width:0;height:48px;background:#151517;border:0;color:#fff;padding:0 16px;font:inherit}
+.nl button{padding:0 20px;background:#fff;color:var(--k);font-weight:600}
+footer .lg{margin-top:32px;padding-top:24px;border-top:1px solid #222;font-size:13px}
+@media(max-width:900px){footer .cs{grid-template-columns:1fr 1fr}}
+
+/* capas: carrito y vista rápida */
+.scrim{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .35s}
+.drawer{position:fixed;top:12px;right:12px;bottom:12px;width:min(420px,calc(100% - 24px));z-index:61;border-radius:20px;display:flex;flex-direction:column;color:#fff;overscroll-behavior:contain;
+  background:rgba(20,20,22,.7);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(30px) saturate(1.5);-webkit-backdrop-filter:blur(30px) saturate(1.5);box-shadow:0 20px 60px rgba(0,0,0,.35);
+  transform:translateX(calc(100% + 24px));visibility:hidden;transition:transform .45s var(--ease),visibility 0s .45s}
+body.cart-open .scrim,body.qv-open .scrim{opacity:1;pointer-events:auto}
+body.cart-open .drawer{transform:none;visibility:visible;transition:transform .45s var(--ease)}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:16px 16px 16px 24px;border-bottom:1px solid rgba(255,255,255,.1)}
+.x{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-size:22px}
+.x:hover{background:rgba(127,127,127,.18)}
+.ship{padding:16px 24px;font-size:14px;color:#ddd}
+.meter{height:4px;background:rgba(255,255,255,.15);border-radius:9px;margin-top:10px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--acc);transform-origin:left;transition:transform .45s var(--ease)}
+.items{flex:1;overflow:auto;padding:0 24px;overscroll-behavior:contain}
+.it{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:16px 0;border-top:1px solid rgba(255,255,255,.08);font-size:14px}
+.it img{width:64px;height:80px;object-fit:cover;border-radius:10px;background:#fff}
+.qty{display:inline-flex;align-items:center;gap:8px;margin-top:8px;border:1px solid rgba(255,255,255,.22);border-radius:99px;padding:0 4px}
+.qty button{width:30px;height:30px;border-radius:99px}
+.df{padding:20px 24px;border-top:1px solid rgba(255,255,255,.1)}
+.df .t{display:flex;justify-content:space-between;font-weight:700;font-size:17px;margin-bottom:4px}
+.df small{display:block;color:#aaa;margin-bottom:16px;font-size:13px}
+.df .btn{width:100%;justify-content:center}
+.qv{position:fixed;z-index:62;left:50%;top:50%;width:min(980px,calc(100% - 24px));max-height:calc(100svh - 24px);overflow:auto;overscroll-behavior:contain;border-radius:24px;display:grid;grid-template-columns:1.05fr 1fr;background:rgba(255,255,255,.78);backdrop-filter:blur(30px) saturate(1.8);-webkit-backdrop-filter:blur(30px) saturate(1.8);border:1px solid rgba(255,255,255,.9);
+  transform:translate(-50%,-46%) scale(.97);opacity:0;pointer-events:none;transition:opacity .3s,transform .35s var(--ease);box-shadow:0 30px 80px rgba(0,0,0,.3)}
+body.qv-open .qv{opacity:1;transform:translate(-50%,-50%);pointer-events:auto}
+.qv .gal{background:rgba(244,243,240,.6);padding:16px;display:grid;gap:10px;align-content:start}
+.qv .gal .main{aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#fff}
+.qv .gal .main img{width:100%;height:100%;object-fit:cover}
+.qv .th{display:flex;gap:8px;overflow-x:auto}
+.qv .th button{flex:none;width:60px;height:60px;border-radius:10px;overflow:hidden;border:2px solid transparent;background:#fff}
+.qv .th button[aria-pressed=true]{border-color:var(--k)}
+.qv .th img{width:100%;height:100%;object-fit:cover}
+.qv .info{padding:32px;display:flex;flex-direction:column;gap:16px;position:relative}
+.qv .info .x{position:absolute;top:12px;right:12px}
+.qv h3{font-size:28px;font-weight:700;padding-right:40px}
+.qv .pr{font-size:24px;font-weight:700}
+.qv .desc{color:#3d3d40;font-size:15px}
+.qv .row{display:flex;gap:8px;margin-top:auto}
+.qv .row .btn{flex:1;justify-content:center}
+.stepper{display:flex;align-items:center;border:1px solid var(--line);border-radius:12px}
+.stepper button{width:44px;height:50px}
+.stepper output{min-width:28px;text-align:center;font-weight:700}
+.qv ul{list-style:none;display:grid;gap:6px;font-size:14px;color:var(--mut)}
+.qv li:before{content:"✓  ";color:var(--k);font-weight:700}
+@media(max-width:760px){.qv{grid-template-columns:1fr;top:auto;bottom:0;left:0;width:100%;border-radius:24px 24px 0 0;transform:translateY(100%);max-height:92svh}body.qv-open .qv{transform:none}}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));z-index:70;padding:12px 20px;border-radius:14px;font-weight:600;box-shadow:var(--sh);transform:translate(-50%,140px);visibility:hidden;transition:transform .35s var(--ease),visibility 0s .35s}
+.toast.show{transform:translate(-50%,0);visibility:visible;transition:transform .35s var(--ease)}
+</style>
+</head>
+<body>
+<a class="skip" href="#tienda">Saltar a la tienda</a>
+<div class="hdr-bg" aria-hidden="true"></div>
+
+<div class="tape" aria-hidden="true"><div id="tape"></div></div>
+
+<header id="hdr" class="glass">
+  <nav aria-label="Principal"><a class="xmas" href="?cat=regalo#tienda" data-cat="regalo">Regalos de Navidad</a><a href="#tienda">Tienda</a><a href="#categorias">Categorías</a><a href="#nosotros">Nosotros</a></nav>
+  <a class="logo" href="#" translate="no" aria-label="Mocilab, inicio">MOCILAB.</a>
+  <div class="tools">
+    <input id="q" class="srch" type="search" name="q" autocomplete="off" placeholder="Busca club, moneda…" aria-label="Buscar productos">
+    <button class="ib" id="sbtn" aria-label="Buscar" aria-controls="q"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    <button class="ib" id="favBtn" aria-label="Ver favoritos"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7.5-4.6-9.5-9.3C1 7.9 3.4 4.5 7 4.5c2 0 3.4 1.1 5 3 1.6-1.9 3-3 5-3 3.6 0 6 3.4 4.5 7.2C19.5 16.4 12 21 12 21z"/></svg><span class="badge num" id="favN"></span></button>
+    <a class="ib" href="https://mocilab.com/account" aria-label="Mi cuenta"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
+    <button class="ib" id="openCart" aria-label="Abrir carrito">Carrito <span class="badge num" id="count"></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="hero" aria-roledescription="carrusel" aria-label="Productos destacados">
+  <div id="slides"></div>
+  <a class="chip glass" id="chip" href="#"><img id="chipImg" src="data:," alt="" width="32" height="32"><span id="chipTxt"></span><span aria-hidden="true">→</span></a>
+  <div class="copy">
+    <span class="k lbl glass">Licencia oficial · Temporada 2026-27</span>
+    <h1>Crafting<br><span class="out">emotions</span></h1>
+    <div class="ctas"><a class="btn w" href="#tienda">Comprar ahora</a><a class="btn g glass" href="?cat=regalo#tienda" data-cat="regalo">Ideas de regalo</a></div>
+  </div>
+  <div class="prog" id="prog" aria-label="Elegir foto"></div>
+  <button class="pp glass" id="pp" aria-label="Pausar pase de fotos"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" id="ppIcon"><rect x="2" y="1" width="3.5" height="12" rx="1"/><rect x="8.5" y="1" width="3.5" height="12" rx="1"/></svg></button>
+</section>
+
+<nav class="clubs" id="clubs" aria-label="Filtrar por club"></nav>
+
+<section class="shop" id="tienda" aria-labelledby="ttl">
+  <div class="hd px"><h2 id="ttl">Toda la <span class="out">tienda</span></h2><p class="soft num" id="n" aria-live="polite"></p></div>
+  <div class="bar">
+    <div class="pills" id="pills" role="group" aria-label="Filtrar por categoría"></div>
+    <label class="sort">Ordenar
+      <select id="sort" name="sort"><option value="new">Novedades</option><option value="asc">Precio: menor a mayor</option><option value="desc">Precio: mayor a menor</option><option value="az">Nombre A-Z</option></select>
+    </label>
+  </div>
+  <div class="grid px" id="grid"></div>
+  <div class="more"><button class="btn k" id="more">Ver más productos</button></div>
+</section>
+
+<section class="edit" id="nosotros">
+  <img src="https://mocilab.com/cdn/shop/files/Thumbnails-Valencia-26_1_8cc0a5bb-501c-4229-ae4f-a148f593d4c9.png?width=1800" alt="Aficionado sujetando monedas oficiales del Valencia CF en la grada" width="1800" height="1800" loading="lazy">
+  <div class="gc">
+    <span class="lbl">Diseñado en España</span>
+    <h2>De fans,<br><span class="out">para fans.</span></h2>
+    <p>Un equipo entre Madrid, Barcelona y Málaga crea piezas que se tocan, se guardan y se regalan, con licencia oficial y acabados de precisión láser.</p>
+    <a class="btn w" href="https://mocilab.com/pages/quienes-somos">Conoce la historia</a>
+  </div>
+</section>
+
+<section class="px" id="categorias" style="padding-top:96px" aria-labelledby="catT">
+  <div class="hd" style="padding-bottom:0"><h2 id="catT">Elige <span>tu colección</span></h2></div>
+  <div class="cats" id="cats"></div>
+</section>
+
+<section class="revs" aria-labelledby="revT">
+  <div class="hd px"><h2 id="revT">4,5 ★ <span>en 477 reseñas</span></h2></div>
+  <div class="track" id="rv"></div>
+</section>
+
+<div class="lic" id="lic" aria-label="Licencias oficiales"></div>
+<div class="perks">
+  <div><b>Envío en 24-72 h</b><span>Gratis en la Península desde 40&nbsp;€</span></div>
+  <div><b>Devolución en 14 días</b><span>Fácil y sin complicaciones</span></div>
+  <div><b>Pago seguro</b><span>Tarjeta, PayPal y más</span></div>
+  <div><b>Licencia oficial</b><span>Producto 100&nbsp;% auténtico</span></div>
+</div>
+</main>
+
+<footer>
+  <div class="cs">
+    <div><h4>Únete al club</h4><p>Lanzamientos y ediciones limitadas antes que nadie.</p>
+      <form class="nl" id="nl"><input type="email" name="email" autocomplete="email" spellcheck="false" required placeholder="tu@email.com" aria-label="Tu email"><button>Unirme</button></form></div>
+    <div><h4>Ayuda</h4><a href="https://mocilab.com/pages/quienes-somos">Quiénes somos</a><a href="https://mocilab.com/pages/contacto-soporte">Contacto</a><a href="https://mocilab.com/policies/shipping-policy">Envíos y devoluciones</a></div>
+    <div><h4>Trabaja con nosotros</h4><a href="https://mocilab.com">Partners</a><a href="https://mocilab.com">Soy una marca</a><a href="https://mocilab.com">Soy tienda</a></div>
+    <div><h4>Síguenos</h4><a href="https://www.instagram.com/mocilab">Instagram</a><a href="https://www.tiktok.com/@mocilab">TikTok</a></div>
+  </div>
+  <div class="fl" translate="no" aria-hidden="true">MOCILAB.</div>
+  <div class="lg">© 2026 MOCILAB · Propuesta de rediseño</div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Carrito" aria-hidden="true">
+  <div class="dh"><b class="lbl">Tu carrito</b><button class="x" id="closeCart" aria-label="Cerrar carrito">×</button></div>
+  <div class="ship" id="ship"></div>
+  <div class="items" id="items"></div>
+  <div class="df"><div class="t"><span>Total</span><span class="num" id="tot"></span></div><small>Impuestos incluidos. Envío calculado al pagar.</small><a class="btn w" id="checkout" href="#">Finalizar compra</a></div>
+</aside>
+<div class="qv" id="qv" role="dialog" aria-modal="true" aria-labelledby="qvT" aria-hidden="true"></div>
+<div class="toast glass-l" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const eurF=new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}), eur=n=>eurF.format(n);
+const FREE=40, F='https://mocilab.com/cdn/shop/files/', esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const CLUBS=[['all','Todos',''],['rm','Real Madrid','c3112c09a47ace3af7b8912fe8a884710abbb094.png'],['fcb','FC Barcelona','8d653c29cea20269ca7232c4cf56618ea511f9b2.png'],['atm','Atlético de Madrid','ATM_Color_8b00a209-2cda-48c0-a459-53ee521f1650.png'],['vcf','Valencia CF','Escudo.png'],['slb','SL Benfica','4s-team-benfica.png'],['scp','Sporting CP','images.png'],['fcp','FC Porto','LOGO_FCPorto.pdf.svg'],['laliga','LaLiga','RGB_Simbolo_LL_coral.png'],['fpf','Portugal','FPF_cOLOR.png'],['gaudi','Gaudí',''],['prin','El Principito','']];
+const clubName=Object.fromEntries(CLUBS.map(c=>[c[0],c[1]]));
+const isPack=p=>/pack/i.test(p.t);
+let favs=new Set();
+const CATS=[['all','Todo',()=>1],['monedas','Monedas',p=>p.cat==='monedas'],['cuadernos','Cuadernos 3D',p=>p.cat==='cuadernos'],['blocs','Blocs 3D',p=>p.cat==='blocs'],['packs','Packs',isPack],['regalo','Regalos < 25 €',p=>p.p<25&&p.ok],['fav','Favoritos',p=>favs.has(p.h)]];
+const SORTS={new:(a,b)=>b.ok-a.ok||b.new.localeCompare(a.new),asc:(a,b)=>b.ok-a.ok||a.p-b.p,desc:(a,b)=>b.ok-a.ok||b.p-a.p,az:(a,b)=>a.t.localeCompare(b.t,'es')};
+const recent=PRODUCTS.map(p=>p.new).sort().reverse()[11];
+const byV=Object.fromEntries(PRODUCTS.map(p=>[p.v,p])), byH=Object.fromEntries(PRODUCTS.map(p=>[p.h,p]));
+const store=(k,d)=>{try{return JSON.parse(localStorage[k])??d}catch{return d}};
+// shortcut: carrito y favoritos solo en este navegador; en el tema real de Shopify irían a /cart/add.js y a la cuenta del cliente
+let cart=store('mocicart',{});favs=new Set(store('mocifav',[]));
+const P=new URLSearchParams(location.search), okCat=c=>CATS.some(x=>x[0]===c);
+let st={club:clubName[P.get('club')]?P.get('club'):'all',cat:okCat(P.get('cat'))?P.get('cat'):'all',sort:SORTS[P.get('sort')]?P.get('sort'):'new',q:P.get('q')||'',n:16};
+
+/* --- pase de fotos de la portada --- */
+const SLIDES=[['Thumbnails-Valencia-26_1_8cc0a5bb-501c-4229-ae4f-a148f593d4c9.png','moneda-oficial-valencia-cf-coleccionable-1919-oro','50% 40%'],
+ ['Thumbnail-Cuaderno-Benfica-04_1.png','cuaderno-3d-oficial-a5-sport-lisboa-e-benfica','60% 50%'],
+ ['Thumbnails-MonedasIDOLS-35_1.png','pack-3-fc-barcelona-idols-pedri-raphinha-lewandowski-copia','50% 50%'],
+ ['Thumbnails-Valencia-30_1.png','moneda-oficial-valencia-cf-coleccionable-bronco-oro','50% 60%'],
+ ['Thumbnails-Porto-04.png','cuaderno-3d-fc-porto-a5','40% 50%'],
+ ['Thumbnails-Monedas-Sporting-05_ede6594f-5822-4c2f-aab7-d4b426048df1.png','pack-5-monedas-oficiales-sporting-cp','50% 50%'],
+ ['Thumbnails-FCB-03_1f702c7f-f739-4dd5-8cd3-9ec018f18aae.png','pack-5-sobres-icoins-collection-fc-barcelona','50% 50%']].filter(s=>byH[s[1]]);
+$('#slides').innerHTML=SLIDES.map(([f,h,o],i)=>`<div class="slide" style="--o:${o}"><img src="${F}${f}?width=2000" alt="${esc(byH[h].t)}" width="2000" height="2000" ${i?'loading="lazy"':'fetchpriority="high"'}></div>`).join('');
+$('#prog').innerHTML=SLIDES.map((s,i)=>`<button aria-label="Ver foto ${i+1} de ${SLIDES.length}"><i></i></button>`).join('');
+let cur=-1,timer,paused=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function go(i){
+  cur=(i+SLIDES.length)%SLIDES.length;
+  $$('.slide').forEach((s,k)=>{s.classList.toggle('on',k===cur);s.setAttribute('aria-hidden',k!==cur)});
+  $$('#prog button').forEach((b,k)=>{b.className=k<cur?'done':'';b.toggleAttribute('aria-current',k===cur);if(k===cur){void b.offsetWidth;b.className='on'}});
+  const p=byH[SLIDES[cur][1]];$('#chip').href=`https://mocilab.com/products/${p.h}`;$('#chip').dataset.qv=p.h;$('#chipImg').src=p.img;$('#chipTxt').textContent=`${p.t} · ${eur(p.p)}`;
+  clearTimeout(timer);if(!paused)timer=setTimeout(()=>go(cur+1),7000);
+}
+function setPause(v){paused=v;$('#hero').classList.toggle('paused',v);$('#pp').setAttribute('aria-label',v?'Reanudar pase de fotos':'Pausar pase de fotos');
+  $('#ppIcon').innerHTML=v?'<path d="M3 1.5v11l9-5.5z"/>':'<rect x="2" y="1" width="3.5" height="12" rx="1"/><rect x="8.5" y="1" width="3.5" height="12" rx="1"/>';clearTimeout(timer);if(!v)timer=setTimeout(()=>go(cur+1),4000)}
+$('#pp').onclick=()=>setPause(!paused);
+$('#prog').onclick=e=>{const b=e.target.closest('button');if(b)go($$('#prog button').indexOf(b))};
+document.addEventListener('visibilitychange',()=>{if(document.hidden)clearTimeout(timer);else if(!paused)go(cur)});
+
+/* --- contenido fijo --- */
+const tapeTxt='Envío gratis desde <b>40 €</b> · Licencia oficial · 4,5 ★ en 477 reseñas · Diseñado en España · Ideas de regalo para Navidad · ';
+$('#tape').innerHTML=`<span>${tapeTxt.repeat(3)}</span><span>${tapeTxt.repeat(3)}</span>`;
+$('#clubs').innerHTML=CLUBS.map(([k,n,f])=>`<button class="club" data-club="${k}" aria-pressed="false">${f?`<img src="${F}${f}?width=64" alt="" width="32" height="32">`:`<span class="ph0" aria-hidden="true">${k==='all'?'✦':n[0]}</span>`}${n}</button>`).join('');
+$('#cats').innerHTML=[['Monedas','monedas','Thumbnails-Valencia-30_1.png'],['Cuadernos 3D','cuadernos','Thumbnail-Cuaderno-Benfica-04_1.png'],['Blocs 3D','blocs','Thumbnails-Porto-04.png'],['Packs','packs','Thumbnails-MonedasIDOLS-35_1.png']]
+  .map(([n,k,f])=>`<a class="cat" href="?cat=${k}#tienda" data-cat="${k}"><img src="${F}${f}?width=800" alt="" width="800" height="800" loading="lazy"><div class="lb glass-l"><b>${n}</b><span class="num">${PRODUCTS.filter(CATS.find(c=>c[0]===k)[2]).length} productos →</span></div></a>`).join('');
+const R=[['Las monedas llegaron en perfecto estado y son preciosas para la colección del Benfica.','João Pedro C.'],['Primera compra y ya me he convertido en cliente habitual.','Espartaco V.'],['Monedas y servicio excelentes. ¡Enhorabuena!','Carlos B.'],['Muy buena calidad.','Paulo L.'],['Rápidos y todo excelente.','Verónica P.'],['Todo fue bien, las monedas son preciosas.','Jorge C.'],['Una colección preciosa y de calidad.','Gonçalo F.']];
+const rvH=R.map(([t,a])=>`<figure class="rv"><span class="st" aria-label="5 de 5 estrellas">★★★★★</span><p>“${t}”</p><small>${a} · Compra verificada</small></figure>`).join('');
+$('#rv').innerHTML=rvH+rvH.replaceAll('<figure class="rv"','<figure class="rv" aria-hidden="true"');
+$('#lic').innerHTML=[['real-madrid','Real Madrid'],['barcelona','FC Barcelona'],['atletico-madrid','Atlético de Madrid'],['valencia-color','Valencia CF'],['benfica_db303d1e-b820-4261-82c0-e056132e01ea','SL Benfica'],['sporting','Sporting CP'],['porto','FC Porto'],['portugal-fpf','Federación Portuguesa de Fútbol']].map(([f,a])=>`<img src="${F}${f}.png?width=160" alt="${a}" width="160" height="160" loading="lazy">`).join('');
+
+/* --- tienda --- */
+function syncURL(){const u=new URLSearchParams();if(st.club!=='all')u.set('club',st.club);if(st.cat!=='all')u.set('cat',st.cat);if(st.sort!=='new')u.set('sort',st.sort);if(st.q)u.set('q',st.q);history.replaceState(null,'',(u+''?'?'+u:location.pathname)+location.hash)}
+function base(){const q=st.q.toLowerCase();return PRODUCTS.filter(p=>(st.club==='all'||p.c===st.club)&&(!q||p.t.toLowerCase().includes(q)))}
+const heart='<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7.5-4.6-9.5-9.3C1 7.9 3.4 4.5 7 4.5c2 0 3.4 1.1 5 3 1.6-1.9 3-3 5-3 3.6 0 6 3.4 4.5 7.2C19.5 16.4 12 21 12 21z"/></svg>';
+function card(p){
+  const t=esc(p.t);
+  return `<article class="card"><div class="ph">
+    <a href="https://mocilab.com/products/${p.h}" data-qv="${p.h}" aria-label="${t}"><img class="p" src="${p.img}" alt="" width="900" height="1125" loading="lazy">${p.life?`<img class="l" src="${p.life}" alt="" width="900" height="900" loading="lazy">`:''}</a>
+    ${p.new>=recent?'<span class="tag n">NUEVO</span>':''}
+    <button class="fav glass-l" data-fav="${p.h}" aria-pressed="${favs.has(p.h)}" aria-label="Guardar ${t} en favoritos">${heart}</button>
+    <div class="acts"><button class="add glass-l" data-add="${p.v}" ${p.ok?'':'disabled'}>${p.ok?'AÑADIR AL CARRITO':'AGOTADO'}</button><button class="qvb glass-l" data-qv="${p.h}" aria-label="Vista rápida de ${t}"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+  </div><div class="meta"><span class="club-n">${clubName[p.c]||'Mocilab'}</span><h3><a href="https://mocilab.com/products/${p.h}" data-qv="${p.h}">${t}</a></h3><span class="pr num">${eur(p.p)}</span></div></article>`;
+}
+function render(){
+  const B=base(), L=B.filter(CATS.find(c=>c[0]===st.cat)[2]).sort(SORTS[st.sort]);
+  $('#pills').innerHTML=CATS.filter(c=>c[0]!=='fav'||favs.size).map(([k,n,f])=>`<button class="pill" data-cat="${k}" aria-pressed="${k===st.cat}">${n} <small class="num">${B.filter(f).length}</small></button>`).join('');
+  const c=clubName[st.club];
+  $('#ttl').innerHTML=st.q?`Resultados <span>“${esc(st.q)}”</span>`:st.cat==='fav'?'Tus <span>favoritos</span>':st.club==='all'?'Toda la <span class="out">tienda</span>':`${c} <span>oficial</span>`;
+  $('#n').textContent=`${L.length} ${L.length===1?'producto':'productos'}`;
+  $('#grid').innerHTML=L.slice(0,st.n).map(card).join('')||`<div class="empty"><p>No hay productos con estos filtros.</p><button class="btn k" id="reset">Ver toda la tienda</button></div>`;
+  $('#more').hidden=L.length<=st.n;
+  $$('.club').forEach(b=>b.setAttribute('aria-pressed',b.dataset.club===st.club));
+  $('#sort').value=st.sort;
+  syncURL();
+}
+function renderCart(){
+  localStorage.mocicart=JSON.stringify(cart);
+  const ids=Object.keys(cart).filter(v=>byV[v]), tot=ids.reduce((s,v)=>s+byV[v].p*cart[v],0), n=ids.reduce((s,v)=>s+cart[v],0);
+  $('#count').textContent=n||'';$('#tot').textContent=eur(tot);
+  $('#ship').innerHTML=(tot>=FREE?'Tienes el <b>envío gratis</b> ✓':`Te faltan <b class="num">${eur(FREE-tot)}</b> para el envío gratis`)+`<div class="meter"><i style="transform:scaleX(${Math.min(1,tot/FREE)})"></i></div>`;
+  $('#items').innerHTML=ids.map(v=>{const p=byV[v];return `<div class="it"><img src="${p.img}" alt="" width="64" height="80"><div style="min-width:0">${esc(p.t)}<br><span class="qty"><button data-d="-1" data-v="${v}" aria-label="Quitar una unidad">−</button><span class="num">${cart[v]}</span><button data-d="1" data-v="${v}" aria-label="Añadir una unidad">+</button></span></div><b class="num">${eur(p.p*cart[v])}</b></div>`}).join('')||'<p style="padding:48px 0;text-align:center;color:#aaa">Tu carrito está vacío.<br>Empieza por tu club.</p>';
+  // permalink de carrito de Shopify: lleva al checkout real de mocilab.com
+  $('#checkout').href=ids.length?'https://mocilab.com/cart/'+ids.map(v=>v+':'+cart[v]).join(','):'#tienda';
+}
+function renderFav(){localStorage.mocifav=JSON.stringify([...favs]);$('#favN').textContent=favs.size||''}
+let tt;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2400)}
+function add(v,q=1){cart[v]=(cart[v]||0)+q;renderCart();toast('Añadido al carrito ✓')}
+
+/* --- capas (carrito / vista rápida) con foco atrapado --- */
+let lastFocus;
+function openLayer(cls,el){lastFocus=document.activeElement;document.body.classList.add(cls);el.setAttribute('aria-hidden','false');el.inert=false;setTimeout(()=>el.querySelector('button,a[href]')?.focus(),60)}
+function closeLayers(){document.body.classList.remove('cart-open','qv-open');[$('#drawer'),$('#qv')].forEach(e=>{e.setAttribute('aria-hidden','true');e.inert=true});lastFocus?.focus?.()}
+[$('#drawer'),$('#qv')].forEach(e=>e.inert=true);
+function quick(h){
+  const p=byH[h],g=[p.img,...p.gal];let q=1;
+  $('#qv').innerHTML=`<div class="gal"><div class="main"><img id="qvImg" src="${g[0]}" alt="${esc(p.t)}" width="900" height="1125"></div><div class="th">${g.map((u,i)=>`<button data-g="${i}" aria-pressed="${!i}" aria-label="Ver foto ${i+1}"><img src="${u.replace('width=1000','width=160')}" alt="" width="60" height="60" loading="lazy"></button>`).join('')}</div></div>
+   <div class="info"><button class="x" data-close aria-label="Cerrar vista rápida">×</button><span class="lbl soft">${clubName[p.c]||'Mocilab'}</span><h3 id="qvT">${esc(p.t)}</h3><span class="pr num">${eur(p.p)}</span>
+   <p class="desc">${esc(p.desc||'Producto oficial con licencia, diseñado en España.')}</p>
+   <ul><li>Licencia oficial</li><li>Envío en 24-72 h · gratis desde 40&nbsp;€</li><li>Devolución en 14 días</li></ul>
+   <div class="row"><div class="stepper"><button data-q="-1" aria-label="Quitar una unidad">−</button><output id="qvQ" class="num">1</output><button data-q="1" aria-label="Añadir una unidad">+</button></div>
+   <button class="btn k" id="qvAdd" ${p.ok?'':'disabled'}>${p.ok?'Añadir al carrito':'Agotado'}</button></div>
+   <a class="soft" style="font-size:14px;text-decoration:underline" href="https://mocilab.com/products/${p.h}">Ver ficha completa</a></div>`;
+  $('#qv').onclick=e=>{const t=e.target.closest('button');if(!t)return;e.stopPropagation();
+    if(t.dataset.g){$('#qvImg').src=g[t.dataset.g];$$('#qv .th button').forEach(b=>b.setAttribute('aria-pressed',b===t))}
+    else if(t.dataset.q){q=Math.max(1,q+ +t.dataset.q);$('#qvQ').textContent=q}
+    else if(t.id==='qvAdd'){add(p.v,q);closeLayers()}
+    else if('close' in t.dataset)closeLayers()};
+  openLayer('qv-open',$('#qv'));
+}
+
+document.addEventListener('click',e=>{
+  const t=e.target.closest('button,a');if(!t)return;
+  const d=t.dataset;
+  if(d.qv&&!(e.metaKey||e.ctrlKey||e.shiftKey)){e.preventDefault();quick(d.qv)}
+  else if(d.club){st.club=d.club;st.n=16;render();$('#tienda').scrollIntoView()}
+  else if(d.cat){e.preventDefault();st.cat=d.cat;st.n=16;render();if(!t.closest('#pills'))$('#tienda').scrollIntoView()}
+  else if(d.add)add(d.add);
+  else if(d.fav){favs.has(d.fav)?favs.delete(d.fav):favs.add(d.fav);t.setAttribute('aria-pressed',favs.has(d.fav));renderFav();toast(favs.has(d.fav)?'Guardado en favoritos ♥':'Quitado de favoritos');if(st.cat==='fav'||favs.size<=1)render()}
+  else if(d.d){const v=d.v;cart[v]+= +d.d;if(cart[v]<=0)delete cart[v];renderCart()}
+  else if(t.id==='more'){st.n+=16;render()}
+  else if(t.id==='reset'){st={...st,club:'all',cat:'all',q:''};$('#q').value='';render()}
+  else if(t.id==='openCart')openLayer('cart-open',$('#drawer'));
+  else if(t.id==='closeCart')closeLayers();
+  else if(t.id==='favBtn'){if(!favs.size){toast('Pulsa ♥ en un producto para guardarlo');return}st.cat='fav';render();$('#tienda').scrollIntoView()}
+  else if(t.id==='sbtn'){$('#q').classList.toggle('on');$('#q').focus()}
+});
+$('#scrim').onclick=closeLayers;
+addEventListener('keydown',e=>{
+  if(e.key==='Escape')closeLayers();
+  if(e.key==='Tab'){const L=document.body.classList.contains('qv-open')?$('#qv'):document.body.classList.contains('cart-open')?$('#drawer'):null;if(!L)return;
+    const f=[...L.querySelectorAll('button:not([disabled]),a[href]')];if(!f.length)return;
+    if(e.shiftKey&&document.activeElement===f[0]){e.preventDefault();f.at(-1).focus()}else if(!e.shiftKey&&document.activeElement===f.at(-1)){e.preventDefault();f[0].focus()}}
+});
+$('#sort').onchange=e=>{st.sort=e.target.value;render()};
+let qt;$('#q').oninput=e=>{clearTimeout(qt);qt=setTimeout(()=>{st.q=e.target.value.trim();st.n=16;render();if(st.q)$('#tienda').scrollIntoView()},180)};
+$('#nl').onsubmit=e=>{e.preventDefault();toast('¡Gracias! Ya estás en el club');e.target.reset()};
+const hdr=$('#hdr');const onScroll=()=>{const s=scrollY>innerHeight*.7;hdr.classList.toggle('solid',s);document.body.classList.toggle('scrolled',s)};addEventListener('scroll',onScroll,{passive:true});onScroll();
+if(st.q){$('#q').value=st.q;$('#q').classList.add('on')}
+go(0);if(paused)setPause(true);render();renderCart();renderFav();
+</script>
+</body>
+</html>
