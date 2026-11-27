@@ -3,21 +3,21 @@
     "archivo": "foto1.jpg",
     "width": 1280,
     "height": 960,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto1.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   },
   {
     "archivo": "foto2.jpg",
     "width": 1280,
     "height": 960,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto2.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   },
   {
     "archivo": "foto3.jpg",
     "width": 1280,
     "height": 960,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto3.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   }
 ]
