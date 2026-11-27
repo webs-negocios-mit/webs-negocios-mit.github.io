@@ -3,35 +3,35 @@
     "archivo": "foto1.jpg",
     "width": 1280,
     "height": 964,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto1.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   },
   {
     "archivo": "foto2.jpg",
     "width": 1280,
     "height": 1280,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto2.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   },
   {
     "archivo": "foto3.jpg",
     "width": 965,
     "height": 1280,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto3.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   },
   {
     "archivo": "foto4.jpg",
     "width": 960,
     "height": 1280,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto4.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   },
   {
     "archivo": "foto5.jpg",
     "width": 1280,
     "height": 1280,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto5.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   }
 ]

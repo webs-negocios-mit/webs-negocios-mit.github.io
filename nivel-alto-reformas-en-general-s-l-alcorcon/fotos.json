@@ -3,14 +3,14 @@
     "archivo": "foto1.jpg",
     "width": 960,
     "height": 1280,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto1.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   },
   {
     "archivo": "foto2.jpg",
     "width": 960,
     "height": 1280,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto2.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   }
 ]

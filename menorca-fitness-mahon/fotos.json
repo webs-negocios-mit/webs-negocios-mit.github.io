@@ -3,7 +3,7 @@
     "archivo": "foto1.jpg",
     "width": 1280,
     "height": 720,
-    "origen": "google-maps",
-    "verificacion": "Ancho comprobado"
+    "origen": "copia-local:foto1.jpg",
+    "verificacion": "Fallback autorizado; origen no verificable sin web antigua"
   }
 ]
