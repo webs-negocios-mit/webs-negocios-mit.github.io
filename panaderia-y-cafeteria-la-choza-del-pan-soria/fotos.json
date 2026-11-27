@@ -1,0 +1,30 @@
+[
+  {
+    "archivo": "foto1.jpg",
+    "width": 1280,
+    "height": 896,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  },
+  {
+    "archivo": "foto2.jpg",
+    "width": 960,
+    "height": 1280,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  },
+  {
+    "archivo": "foto3.jpg",
+    "width": 1280,
+    "height": 960,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  },
+  {
+    "archivo": "foto4.jpg",
+    "width": 960,
+    "height": 1280,
+    "origen": "google-maps",
+    "verificacion": "Ancho comprobado"
+  }
+]
